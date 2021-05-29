@@ -8,7 +8,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <TextView
-        android:id="@+id/textview_chat_sent"
+        android:id="@+id/textview_chat_received"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
@@ -21,7 +21,7 @@
         android:maxWidth="256dp" />
 
     <TextView
-        android:id="@+id/textview_chat_received"
+        android:id="@+id/textview_chat_sent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="8dp"

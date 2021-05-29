@@ -39,7 +39,7 @@ class RegisterActivity : AppCompatActivity() {
         if (validate()) {
             register()
         } else {
-            showErrorMessage()
+            showErrorMessage(textview_error_register.text.toString())
         }
     }
 
@@ -64,7 +64,7 @@ class RegisterActivity : AppCompatActivity() {
                 if (it.isSuccessful)
                     launchLobby()
                 else
-                    showErrorMessage()
+                    showErrorMessage(it.exception.toString())
             }
     }
 
@@ -78,8 +78,9 @@ class RegisterActivity : AppCompatActivity() {
         startActivity(Intent(this, LoginActivity::class.java))
     }
 
-    private fun showErrorMessage() {
+    private fun showErrorMessage(msg : String) {
         textview_error_register.visibility = View.VISIBLE
+        textview_error_register.text = msg
         button_register.isEnabled = true
     }
 

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FirestoreSmartChat</string>
+    <string name="msg_subscribed">subscribed</string>
+    <string name="msg_subscribe_failed">sub failed</string>
 </resources>
